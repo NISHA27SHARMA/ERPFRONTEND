@@ -17,11 +17,125 @@
     <title>slider</title>
   </head>
 	<body>
+	
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Services <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline mt-2 mt-md-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">GO</button>
+    </form>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalLong">
+                    Login
+                  </button>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <!-- Modal -->
+               
+               <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+				
+				
+				<!--  login form experiment-->
+				 <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+				        </div>
+                    </form>
+               
+               
+               
+               
+               
+                  
+                  
+         <!--  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div> -->
+                
+                
+          <div class="modal-body">
+              <form class="login-form">
+                  <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label" id="text1">Username</label>
+                    <div class="col-sm-10">
+                      <input type="Username" class="form-control" id="inputEmail" placeholder="email">
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label" id="text1">Password</label>
+                    <div class="col-sm-10">
+                      <input type="Password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                  </div>
+                 <br><br>
+                
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary"><a href="#">Login</a></button>
+                      <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                  </div>
+                      </form>
+                </div>
+                        <!--<div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>-->
+                      </div>
+                    </div>
+                  </div>
+  </div>
+</nav><br><br>
+
 	<div id="colorlib-page">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 			<h1 id="colorlib-logo"><a href="index.html" style="color:white;"><b>MUSHROOM</b></a></h1>
-			<nav id="colorlib-main-menu" role="navigation">
+			<!-- <nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li class="colorlib-active"><a href="index.html" style="color:white;>Home</a></li>
 					<li><a style="color:white;"><b>LOGIN</b></a></li>
@@ -29,19 +143,21 @@
 					<li><a href="services.html" style="color:white;">ABOUT</a></li>
 				<li><a href="contact.html" style="color:white;">CONTACT</a></li>
 				</ul>
-			</nav>
+			</nav> -->
 
-			<!--  <div class="colorlib-footer">
-				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <!--  </span> <span>Demo Images: <a href="http://nothingtochance.co/" target="_blank">nothingtochance.co</a></span></small></p> -->
-				<!--  <ul>
-					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+			 <div class="colorlib-footer">
+				<!-- <p><small>&copy;Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+ <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+   <!-- </span>  --><!-- <span>Demo Images: <a href="http://nothingtochance.co/" target="_blank">nothingtochance.co</a></span> -->
+   <!-- </small></p> --> 
+				  <ul>
+					<li><i class="icon-facebook2"></i></a></li>
 					<li><a href="#"><i class="icon-twitter2"></i></a></li>
 					<li><a href="#"><i class="icon-instagram"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
 				</ul>
-			</div>-->
+			</div>
 
 		</aside>
 
@@ -333,7 +449,7 @@
 							<div class="project" style="background-image: url(file:///D:/HTML/images/img_bg_10.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 01</a></h3>
+										<h3>Work 01</a></h3>
 										<span>Banking and Financial</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
